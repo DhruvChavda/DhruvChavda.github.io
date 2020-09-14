@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    cursor: none;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 3em;
+    text-decoration: none;
+    cursor: none;
+    color:#FFF;
+    transition: 0.2s;
+}
+
+.cursor{
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFF;
+    transition: 0.2s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+ul li:hover ~ .cursor
+{
+    transform: scale(6);
+}
+
+
+
+
+
