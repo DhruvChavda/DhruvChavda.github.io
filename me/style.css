@@ -43,17 +43,16 @@ ul li a{
     height: 12px;
     border-radius: 50%;
     background: #FFF;
-    transition: 0.2s;
     transform: translate(-50%,-50%);
+    /* transition: all 0.2s; */
     pointer-events: none;
     mix-blend-mode: difference;
 }
-
+/* 
 ul li:hover ~ .cursor
 {
     transform: scale(6);
-}
-
+} */
 
 
 
