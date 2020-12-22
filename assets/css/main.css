@@ -884,23 +884,23 @@ input, select, textarea {
 	/* Header */
 
 		#header h1 {
-			font-size: 5em;
+			font-size: 2.5em;
 		}
 
 		#header p {
-			font-size: 1.5em;
-		}
-
-		#header nav {
 			font-size: 1em;
 		}
 
+		#header nav {
+			font-size: 0.8em;
+		}
+
 			#header nav a:hover {
-				font-size: 1em;
+				font-size: 1.1em;
 			}
 
 			#header nav a:active {
-				font-size: 1em;
+				font-size: 1.1em;
 			} }
 
 /* Mobile (Portrait) */
