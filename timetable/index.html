@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TimeTable</title>
+</head>
+<body class="white">
+    <nav class="navbar navbar-light bg-light">
+        <span class="title navbar-brand ">TimeTable</span>
+            <button type="button" id="btn1" class="btn btn-dark" onclick="changeTheme()">Dark</button></span>
+    </nav>
+    <div class="row text-center justify-content-center pad">
+        <div class="col-md-3 col-8 rounded-circle">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Monday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="">SC 402: Cryptography</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">HM 432: Organisational Behaviour</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">IT413: No SQL Databases</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Tuesday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="" >IT314: Software Engineering</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">-</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/fqe-ssic-pfi?authuser=1" target="_blank" class="">EL422: CMOS Analog IC Design</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Wensday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="">IT413: No SQL Databases</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">IE411: Operating System</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">-</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+    </div>
+    <div class="row text-center justify-content-center pad">
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="" >IT314: Software Engineering</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="" target="_blank">SC 402: Cryptography</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/ikg-ibsu-dbf?pli=1&authuser=1" target="_blank" class="">HM 432: Organisational Behaviour</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://meet.google.com/fqe-ssic-pfi?authuser=1" target="_blank" class="">EL422: CMOS Analog IC Design</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">-</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">IE411: Operating System</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+
+    </div>
+    
+
+
+    <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function changeTheme(){
+        //Body
+            $("body").toggleClass("white");
+            $("body").toggleClass("grey");
+            
+
+        // Button Color
+            $("#btn1").toggleClass("btn-dark");
+            $("#btn1").toggleClass("btn-light");
+
+        // Button Text
+            var x = $("#btn1").text();
+            if(x==="Dark")  x="Light";
+            else    x="Dark";
+            $("#btn1").text(x);
+            
+
+        //Nav Bar
+            $("nav").toggleClass("navbar-light");
+            $("nav").toggleClass("navbar-dark");
+            $("nav").toggleClass("bg-light");
+            $("nav").toggleClass("bg-dark");
+
+        //Table
+            $("td").toggleClass("bg-dark");
+            $("td a").toggleClass("white");
+
+            $("thead").toggleClass("thead-dark");
+            $("thead").toggleClass("thead-light");
+        }
+    </script>
+</body>
+</html>
