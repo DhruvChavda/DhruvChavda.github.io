@@ -11,7 +11,7 @@
 <body class="white">
     <nav class="navbar navbar-light bg-light">
         <span class="title navbar-brand ">TimeTable</span>
-            <button type="button" id="btn1" class="btn btn-dark" onclick="changeTheme()">Dark</button></span>
+            <button type="button" id="btn1" class="btn btn-dark" onclick="changeTheme()"><i id="btn1ic" class="fas fa-moon"></i> &nbsp;Dark</button></span>
     </nav>
     <div class="row text-center justify-content-center pad">
         <div class="col-md-3 col-8 rounded-circle">
@@ -128,6 +128,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/78fb7d0104.js" crossorigin="anonymous"></script>   
     <script>
         function changeTheme(){
         //Body
@@ -138,12 +139,27 @@
         // Button Color
             $("#btn1").toggleClass("btn-dark");
             $("#btn1").toggleClass("btn-light");
+            
+
+        //Button Icon
+        $("#btn1ic").toggleClass("fas fa-moon");
+        $("#btn1ic").toggleClass("fas fa-sun");
 
         // Button Text
-            var x = $("#btn1").text();
-            if(x==="Dark")  x="Light";
-            else    x="Dark";
-            $("#btn1").text(x);
+            var x = $("#btn1").html();
+            //console.log(x);
+            if(x=='<i id="btn1ic" class="fas fa-sun" aria-hidden="true"></i> &nbsp;Dark')
+            {
+                x='<i id="btn1ic" class="fas fa-sun"></i> &nbsp;Light';
+                //console.log("yes");
+            }  
+            else
+            {
+                x='<i id="btn1ic" class="fas fa-moon"></i> &nbsp;Dark';
+                //console.log("no");
+            }    
+            $("#btn1").html(x);
+            //console.log(x);
             
 
         //Nav Bar
