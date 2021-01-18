@@ -37,8 +37,8 @@ footer {
           box-shadow: none !important;
 }
 
-a {
-  color: black;
+a, a :hover {
+  color: black !important;
   text-decoration: none !important;
 }
 /*# sourceMappingURL=style.css.map */

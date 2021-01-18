@@ -6,12 +6,12 @@
     font-family:Ubuntu, sans-serif;
 }
 
-
-
 .title{
     font-size: 2.5rem;
     //color: white;
 }
+
+
 
 .pad{
     margin-top: 1rem;
@@ -40,7 +40,7 @@ footer{
     box-shadow: none !important;
 }
 
-a{
-    color: black;
+a, a :hover{
+    color: black !important;
     text-decoration:none !important;
 }

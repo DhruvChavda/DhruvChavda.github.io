@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>TimeTable</title>
 </head>
-<body class="white">
+<body class="">
     <nav class="navbar navbar-light bg-light">
         <span class="title navbar-brand ">TimeTable</span>
             <button type="button" id="btn1" class="btn btn-dark" onclick="changeTheme()"><i id="btn1ic" class="fas fa-moon"></i> &nbsp;Dark</button></span>
     </nav>
     <div class="row text-center justify-content-center pad">
-        <div class="col-md-3 col-8 rounded-circle">
+        <div class="col-md-3 col-8">
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
@@ -23,18 +23,18 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#" class="">SC 402: Cryptography</a></td>
+                        <td><a href="https://meet.google.com/czt-reft-dqu?pli=1&authuser=1" target="_blank" class="">SC 402: Cryptography</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#" class="">HM 432: Organisational Behaviour</a></td>
+                        <td><a href="https://meet.google.com/mic-thsc-qzo?pli=1&authuser=1" target="_blank" class="">HM 432: Organisational Behaviour</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#" class="">IT413: No SQL Databases</a></td>
+                        <td><a href="https://meet.google.com/mii-npey-rxr?pli=1&authuser=1" target="_blank" class="">IT413: No SQL Databases</a></td>
                     </tr>
                 </tbody>
             </table>  
         </div>
-
+        
         <div class="col-md-3 col-8">
             <table class="table">
                 <thead class="thead-dark">
@@ -44,13 +44,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#" class="" >IT314: Software Engineering</a></td>
+                        <td><a href="https://daiict.webex.com/daiict/j.php?MTID=maa4bfcff62b067b3eb7204039b66e788" class="" target="_blank">IT314: Software Engineering</a></td>
                     </tr>
                     <tr>
                         <td><a href="#" class="">-</a></td>
                     </tr>
                     <tr>
-                        <td><a href="https://meet.google.com/fqe-ssic-pfi?authuser=1" target="_blank" class="">EL422: CMOS Analog IC Design</a></td>
+                        <td><a href="https://meet.google.com/dzg-waeu-jas?authuser=1" target="_blank" class="">IE410: Introduction to Robotics</a></td>
                     </tr>
                 </tbody>
             </table>  
@@ -65,10 +65,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#" class="">IT413: No SQL Databases</a></td>
+                        <td><a href="https://meet.google.com/mii-npey-rxr?pli=1&authuser=1" target="_blank" class="">IT413: No SQL Databases</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#" class="">IE411: Operating System</a></td>
+                        <td><a href="https://meet.google.com/vvq-frhf-oyr?pli=1&authuser=1" target="_blank" class="">IE411: Operating System</a></td>
                     </tr>
                     <tr>
                         <td><a href="#" class="">-</a></td>
@@ -87,13 +87,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#" class="" >IT314: Software Engineering</a></td>
+                        <td><a href="https://daiict.webex.com/daiict/j.php?MTID=maa4bfcff62b067b3eb7204039b66e788" class="" target="_blank">IT314: Software Engineering</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#" class="" target="_blank">SC 402: Cryptography</a></td>
+                        <td><a href="https://meet.google.com/czt-reft-dqu?pli=1&authuser=1" target="_blank" class="">SC 402: Cryptography</a></td>
                     </tr>
                     <tr>
-                        <td><a href="https://meet.google.com/ikg-ibsu-dbf?pli=1&authuser=1" target="_blank" class="">HM 432: Organisational Behaviour</a></td>
+                        <td><a href="https://meet.google.com/mic-thsc-qzo?pli=1&authuser=1" target="_blank" class="">HM 432: Organisational Behaviour</a></td>
                     </tr>
                 </tbody>
             </table>  
@@ -108,19 +108,26 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="https://meet.google.com/fqe-ssic-pfi?authuser=1" target="_blank" class="">EL422: CMOS Analog IC Design</a></td>
+                        <td><a href="https://meet.google.com/dzg-waeu-jas?authuser=1" target="_blank" class="">IE410: Introduction to Robotics</a></td>
                     </tr>
                     <tr>
                         <td><a href="#" class="">-</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#" class="">IE411: Operating System</a></td>
+                        <td><a href="https://meet.google.com/vvq-frhf-oyr?pli=1&authuser=1" target="_blank" class="">IE411: Operating System</a></td>
                     </tr>
                 </tbody>
             </table>  
         </div>
-
     </div>
+    
+    <footer style="text-align: center;" class="">
+        <span style="font-size: small;">Thank You for using!</span>
+        <br>
+        <span style="font-size: small;">Created by:&nbsp;<a href="https://dhruvchavda.github.io/me/" style="border-bottom: 1px solid rgb(151, 151, 151) ; font-size: smaller;">DMC </a></span>
+    </footer>
+    
+    
     
 
 
@@ -132,30 +139,24 @@
     <script>
         function changeTheme(){
         //Body
-            $("body").toggleClass("white");
             $("body").toggleClass("grey");
-            
+            $("footer").toggleClass("white");
 
         // Button Color
             $("#btn1").toggleClass("btn-dark");
             $("#btn1").toggleClass("btn-light");
-            
-
-        //Button Icon
-        $("#btn1ic").toggleClass("fas fa-moon");
-        $("#btn1ic").toggleClass("fas fa-sun");
 
         // Button Text
             var x = $("#btn1").html();
             //console.log(x);
-            if(x=='<i id="btn1ic" class="fas fa-sun" aria-hidden="true"></i> &nbsp;Dark')
+            if(x=='<i id="btn1ic" class="fas fa-moon" aria-hidden="true"></i> &nbsp;Dark')
             {
-                x='<i id="btn1ic" class="fas fa-sun"></i> &nbsp;Light';
+                x='<i id="btn1ic" class="fas fa-sun" aria-hidden="true"></i> &nbsp;Light';
                 //console.log("yes");
             }  
             else
             {
-                x='<i id="btn1ic" class="fas fa-moon"></i> &nbsp;Dark';
+                x='<i id="btn1ic" class="fas fa-moon" aria-hidden="true"></i> &nbsp;Dark';
                 //console.log("no");
             }    
             $("#btn1").html(x);
@@ -171,10 +172,18 @@
         //Table
             $("td").toggleClass("bg-dark");
             $("td a").toggleClass("white");
+            $("span a").toggleClass("white");
 
             $("thead").toggleClass("thead-dark");
             $("thead").toggleClass("thead-light");
         }
+        
+        // click on window load
+        window.onload= function(){
+            document.getElementById('btn1').click();
+        }
+        
+
     </script>
 </body>
 </html>
