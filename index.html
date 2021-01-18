@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta data for link preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TimeTable" />
+    <meta property="og:description" content="A simple minimal timetable with Darkmode" />
+    <meta property="og:url" content="https://dhruvchavda.github.io/timetable/" />
+    <meta property="og:site_name" content="TimeTable" />
+    <meta property="article:publisher" content="Dhruv Chavda" />
+    <meta property="og:image" content="css/calendar.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://dhruvchavda.github.io/timetable/css/calendar.svg" type="image/x-icon">
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>TimeTable</title>
+</head>
+<body class="">
+    <nav class="navbar navbar-light bg-light">
+        <span class="title navbar-brand ">TimeTable</span>
+            <button type="button" id="btn1" class="btn btn-dark" onclick="changeTheme()"><i id="btn1ic" class="fas fa-moon"></i> &nbsp;Dark</button></span>
+    </nav>
+    <div class="row text-center justify-content-center pad">
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Monday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://meet.google.com/czt-reft-dqu?pli=1&authuser=1" target="_blank" class="">SC 402: Cryptography</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/mic-thsc-qzo?pli=1&authuser=1" target="_blank" class="">HM 432: Organisational Behaviour</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/huo-jqtu-srd?pli=1&authuser=1" target="_blank" class="">IT413: No SQL Databases</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+        
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Tuesday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://daiict.webex.com/daiict/j.php?MTID=maa4bfcff62b067b3eb7204039b66e788" class="" target="_blank">IT314: Software Engineering</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">-</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/dzg-waeu-jas?authuser=1" target="_blank" class="">IE410: Introduction to Robotics</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Wensday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://meet.google.com/huo-jqtu-srd?pli=1&authuser=1" target="_blank" class="">IT413: No SQL Databases</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/vvq-frhf-oyr?pli=1&authuser=1" target="_blank" class="">IE411: Operating System</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">-</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+    </div>
+    <div class="row text-center justify-content-center pad">
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://daiict.webex.com/daiict/j.php?MTID=maa4bfcff62b067b3eb7204039b66e788" class="" target="_blank">IT314: Software Engineering</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/czt-reft-dqu?pli=1&authuser=1" target="_blank" class="">SC 402: Cryptography</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/mic-thsc-qzo?pli=1&authuser=1" target="_blank" class="">HM 432: Organisational Behaviour</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+
+        <div class="col-md-3 col-8">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://meet.google.com/dzg-waeu-jas?authuser=1" target="_blank" class="">IE410: Introduction to Robotics</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="">-</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://meet.google.com/vvq-frhf-oyr?pli=1&authuser=1" target="_blank" class="">IE411: Operating System</a></td>
+                    </tr>
+                </tbody>
+            </table>  
+        </div>
+    </div>
+    
+    <footer style="text-align: center;" class="">
+        <span style="font-size: small;">Thank You for using!</span>
+        <br>
+        <span style="font-size: small;">Created by:&nbsp;<a href="https://dhruvchavda.github.io/me/" style="border-bottom: 1px solid rgb(151, 151, 151) ; font-size: smaller;">DMC </a></span>
+    </footer>
+    
+    <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/78fb7d0104.js" crossorigin="anonymous"></script>   
+    <script>
+        function changeTheme(){
+        //Body
+            $("body").toggleClass("grey");
+            $("footer").toggleClass("white");
+
+        // Button Color
+            $("#btn1").toggleClass("btn-dark");
+            $("#btn1").toggleClass("btn-light");
+
+        // Button Text
+            var x = $("#btn1").html();
+            //console.log(x);
+            if(x=='<i id="btn1ic" class="fas fa-moon" aria-hidden="true"></i> &nbsp;Dark')
+            {
+                x='<i id="btn1ic" class="fas fa-sun" aria-hidden="true"></i> &nbsp;Light';
+                //console.log("yes");
+            }  
+            else
+            {
+                x='<i id="btn1ic" class="fas fa-moon" aria-hidden="true"></i> &nbsp;Dark';
+                //console.log("no");
+            }    
+            $("#btn1").html(x);
+            //console.log(x);
+            
+
+        //Nav Bar
+            $("nav").toggleClass("navbar-light");
+            $("nav").toggleClass("navbar-dark");
+            $("nav").toggleClass("bg-light");
+            $("nav").toggleClass("bg-dark");
+
+        //Table
+            $("td").toggleClass("bg-dark");
+            $("td a").toggleClass("white");
+            $("span a").toggleClass("white");
+
+            $("thead").toggleClass("thead-dark");
+            $("thead").toggleClass("thead-light");
+        }
+        
+        // click on window load
+        window.onload= function(){
+            document.getElementById('btn1').click();
+        }
+        
+    </script>
+</body>
+</html>
