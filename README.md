@@ -1,2 +1,3 @@
 # Timetable for 6th Semester
-B.tech-2018
+with Darkmode
+for B.tech-2018 students
