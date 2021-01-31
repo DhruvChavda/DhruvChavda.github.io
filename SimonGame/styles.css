@@ -6,7 +6,7 @@ body {
 #level-title {
   font-family: 'Comfortaa', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin-bottom:  2%;
   color: #FEF2BF;
 }
 
@@ -50,4 +50,12 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+#start{
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin-top: 1%;
+  border-radius: 50px;
 }

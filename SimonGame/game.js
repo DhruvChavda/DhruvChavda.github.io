@@ -55,6 +55,7 @@ function gameLogic(x){
 }
 
 function startOver(){
+    $("#start").fadeIn(500);
     userClickedPattern=[];
     gamePattern=[];
     level=0;
@@ -65,9 +66,22 @@ $(document).keypress(function() {
     //console.log( "Handler for .keypress() called." );
     if(flag==0){
     flag=1;
+    $("#start").fadeOut(500);
     nextSequence();
     }
 });
+
+//start button use
+function startButton(){
+    //console.log( "Handler for .keypress() called." );
+    if(flag==0){
+        flag=1;
+        $("#start").fadeOut(500);
+        nextSequence();
+    }
+}
+
+document.getElementById("start").addEventListener("click",startButton);
 
 function playSound(name) {
     var audio = new Audio("sounds/" + name + ".mp3");
