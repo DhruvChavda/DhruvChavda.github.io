@@ -3,7 +3,7 @@ body {
   background-color: #011F3F;
 }
 
-#level-title {
+.level-title {
   font-family: 'Comfortaa', cursive;
   font-size: 3rem;
   margin-bottom:  2%;
@@ -61,17 +61,20 @@ body {
   visibility: hidden;
 }
 
+#pc{
+  display: block;
+}
+
+#mobile{
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
 
   .container {
     display: block;
     width: 100%;
     margin: auto;
-  }
-
-  #start{
-    margin-top: 2vw;
-    visibility: visible;
   }
 
   .btn {
@@ -105,6 +108,14 @@ body {
     width: 30vw;
     border: 3px solid black;
     border-radius: 25%;
+  }
+
+  #pc{
+    display: none;
+  }
+  
+  #mobile{
+    display: block;
   }
 
 }

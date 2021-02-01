@@ -3,6 +3,7 @@ var userClickedPattern = [];
 var gamePattern = [];
 var level = 0;
 var flag = 0;
+var stbtn = false;
 
 $(".btn").click(function(){
     var userChoosenColour = $(this).attr("id");
@@ -21,7 +22,14 @@ function nextSequence(){
     $(seletedId).fadeOut(50).fadeIn(50);
     playSound(randomChoosenColour);
     //level inc
-    $("#level-title").text("Level :" + level);
+    if(stbtn)
+    {
+        $("#mobile").text("Level :" + level);
+    }
+    else
+    {
+        $("#pc").text("Level :" + level);
+    }
     level++;
 }
 
@@ -33,7 +41,6 @@ function gameLogic(x){
         //console.log(gamePattern.length-1);
         if(x==gamePattern.length-1)
         {
-            
             setTimeout(function(){
                 playSound("correct");
             },500);
@@ -49,7 +56,15 @@ function gameLogic(x){
         setTimeout(function(){
             document.getElementById("body").style.backgroundColor="#011F3F";
         },200);
-        $("#level-title").html("GAME OVER GGs! <br> Press any key to Restart");
+        if(stbtn)
+        {
+            $("#mobile").html("GAME OVER GGs! <br> Press START key to Restart");
+            stbtn=false;
+        }
+        else
+        {
+            $("#pc").html("GAME OVER GGs! <br> Press any key to Restart");
+        }
         startOver();
     }
 }
@@ -74,6 +89,7 @@ $(document).keypress(function() {
 //start button use
 function startButton(){
     //console.log( "Handler for .keypress() called." );
+    stbtn=true;
     if(flag==0){
         flag=1;
         $("#start").fadeOut(500);
